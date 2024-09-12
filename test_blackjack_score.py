@@ -1,16 +1,16 @@
 from main import blackjack_score
 import pytest
 
-#@pytest.mark.skip(reason="no way of currently testing this")
+# @pytest.mark.skip(reason="no way of currently testing this")
 def test_score_for_pair_of_number_cards():
   # Arrange
   hand = [3, 4]
-
+  result = 7
   # Act
   score = blackjack_score(hand)
 
   # Assert <-- Write assert statement here
-  
+  assert score == result
 
 @pytest.mark.skip(reason="no way of currently testing this")
 def test_facecards_have_values_calculated_correctly():
